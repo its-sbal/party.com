@@ -3,3 +3,5 @@
 # dependencies
 /frontend/node_modules
 /myenv
+/backend/backend/__pycache__
+
