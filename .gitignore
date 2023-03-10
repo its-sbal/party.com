@@ -3,3 +3,4 @@
 # dependencies
 /frontend/node_modules
 /myenv
+/backend/db.sqlite3
