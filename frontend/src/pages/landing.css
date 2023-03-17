@@ -1,5 +1,5 @@
 .left {
-  width: 50%;
+  width: 40%;
 
   height: 100%;
   background-color: aqua;
@@ -8,9 +8,15 @@
 }
 
 .right {
-  width: 50%;
+  width: 60%;
   height: 100%;
   background-color: rgb(160, 160, 240);
   position: absolute;
   right: 0px;
+}
+
+.right img {
+  position: absolute;
+  height: 70%;
+  object-fit: cover;
 }

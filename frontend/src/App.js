@@ -8,7 +8,6 @@ import Landing from "./pages/landing";
 function App() {
   return (
     <>
-      <p>working</p>
       <Landing />
       {/* <Router>
         <Navbar />
