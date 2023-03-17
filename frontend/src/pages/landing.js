@@ -12,7 +12,7 @@ function Landing() {
           <div>Name</div>
           <Input placeholder="Your Name" prefix={<UserOutlined />} />
           <div>Number</div>
-          <Input placeholder="Your Number" prefix={<UserOutlined />} />
+          <Input placeholder="Mobile Number" prefix="+91" />
           <div>Location</div>
           <Input placeholder="Your Location" prefix={<UserOutlined />} />
           <div className="buttonin">
