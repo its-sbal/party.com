@@ -14,3 +14,10 @@
   position: absolute;
   right: 0px;
 }
+.insideleft {
+  margin: 140px 70px 75px;
+}
+.buttonin {
+  padding-top: 10px;
+  margin-left: 140px;
+}
