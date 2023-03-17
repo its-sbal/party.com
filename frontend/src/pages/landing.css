@@ -14,3 +14,7 @@
   position: absolute;
   right: 0px;
 }
+
+.right img {
+  width: 100%;
+}
