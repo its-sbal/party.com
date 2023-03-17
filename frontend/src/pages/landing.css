@@ -14,6 +14,10 @@
   position: absolute;
   right: 0px;
 }
+
+.right img {
+  width: 100%;
+}
 .insideleft {
   margin: 140px 70px 75px;
 }
