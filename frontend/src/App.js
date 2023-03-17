@@ -8,8 +8,8 @@ import Landing from "./pages/landing";
 function App() {
   return (
     <>
-      <Landing />
-      {/* <Router>
+      {/* <Landing /> */}
+      <Router>
         <Navbar />
         <Routes>
           <Route path="/" element={<HomeMain />} exact />
@@ -18,7 +18,7 @@ function App() {
           <Route path="/contact-us" element={<HomeMain />} />
           <Route path="/sign-up" element={<HomeMain />} />
         </Routes>
-      </Router> */}
+      </Router>
     </>
   );
 }

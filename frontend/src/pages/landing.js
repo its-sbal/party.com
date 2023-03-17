@@ -5,7 +5,7 @@ function Landing() {
     <div>
       <div className="left"></div>
       <div className="right">
-        <img src={photo1} style={{ height: "1000px", width: "100%" }} />
+        <img src={photo1} />
       </div>
     </div>
   );
