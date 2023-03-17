@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import About from "./pages/about";
 import HomeMain from "./components/HomeMain";
 import Landing from "./pages/landing";
+import Birthday from "./pages/birthday";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/services" element={<HomeMain />} />
           <Route path="/contact-us" element={<HomeMain />} />
           <Route path="/sign-up" element={<HomeMain />} />
+          <Route path="/birthday" element={<Birthday />} />
         </Routes>
       </Router>
     </>
