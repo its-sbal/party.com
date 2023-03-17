@@ -1,0 +1,41 @@
+.card-main {
+  height: 260px;
+  width: 180px;
+  border-radius: 10px;
+  background-color: violet;
+}
+
+.option-image {
+  margin: auto;
+  display: block;
+  margin-top: 4%;
+}
+
+.option-card {
+  height: 90px;
+  width: 166px;
+  background-color: white;
+  border-radius: 8px;
+
+  margin: auto;
+  display: block;
+  position: relative;
+  bottom: -86%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");
+.option-heading {
+  text-align: center;
+  font-family: "Tilt Warp", cursive;
+}
+
+.view-button {
+  width: 155px;
+  height: 40px;
+  border-radius: 8px;
+  margin: auto;
+  display: block;
+  background-color: rgb(203, 228, 228);
+  position: relative;
+  bottom: -26%;
+}
