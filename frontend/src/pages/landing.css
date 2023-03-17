@@ -14,9 +14,3 @@
   position: absolute;
   right: 0px;
 }
-
-.right img {
-  position: absolute;
-  height: 70%;
-  object-fit: cover;
-}
