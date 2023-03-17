@@ -8,20 +8,17 @@ import Landing from "./pages/landing";
 function App() {
   return (
     <>
-      <p>working</p>
-      {/* <Landing /> */}
-      {
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<HomeMain />} exact />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<HomeMain />} />
-            <Route path="/contact-us" element={<HomeMain />} />
-            <Route path="/sign-up" element={<HomeMain />} />
-          </Routes>
-        </Router>
-      }
+      <Landing />
+      {/* <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomeMain />} exact />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<HomeMain />} />
+          <Route path="/contact-us" element={<HomeMain />} />
+          <Route path="/sign-up" element={<HomeMain />} />
+        </Routes>
+      </Router> */}
     </>
   );
 }
