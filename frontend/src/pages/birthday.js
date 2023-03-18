@@ -1,7 +1,11 @@
+import EventOptionCard from "../cred/EventOptionCard";
+import { HorizontalSpacer } from "@cred/neopop-web/lib/components";
+
 function Birthday() {
   return (
     <div>
-      <h1>birthday</h1>
+      <HorizontalSpacer n={4} />
+      <EventOptionCard />
     </div>
   );
 }
