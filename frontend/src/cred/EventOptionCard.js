@@ -21,7 +21,7 @@ const ContentWrapper = styled.div`
   padding: 20px;
 `;
 
-const EventOptionCard = () => {
+const EventOptionCard = (props) => {
   return (
     <ElevatedCard
       backgroundColor="#AE275F"
@@ -36,10 +36,7 @@ const EventOptionCard = () => {
     >
       <ContentWrapper>
         <Column>
-          <img
-            src="https://www.iconbunny.com/icons/media/catalog/product/2/6/2622.13-party-decoration-icon-iconbunny.jpg"
-            style={{ height: "110px", width: "130px" }}
-          />
+          <img src={props.image} style={{ height: "110px", width: "130px" }} />
           <HorizontalSpacer n={1} />
           <div>
             <Tag
@@ -60,7 +57,7 @@ const EventOptionCard = () => {
             kind="elevated"
             fullWidth={true}
           >
-            Decoration
+            {props.title}
           </Button>
         </Column>
       </ContentWrapper>

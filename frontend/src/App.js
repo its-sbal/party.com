@@ -9,7 +9,6 @@ import Birthday from "./pages/birthday";
 function App() {
   return (
     <>
-      {/* <Landing /> */}
       <Router>
         <Navbar />
         <Routes>
@@ -19,6 +18,7 @@ function App() {
           <Route path="/contact-us" element={<HomeMain />} />
           <Route path="/sign-up" element={<HomeMain />} />
           <Route path="/birthday" element={<Birthday />} />
+          <Route path="/landing" element={<Landing />} />
         </Routes>
       </Router>
     </>

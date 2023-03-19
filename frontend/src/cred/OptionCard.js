@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import Birthday from "../pages/birthday";
 import image1 from "../images/party.png";
+
 function Card(props) {
   return (
     <div className="card-main">
