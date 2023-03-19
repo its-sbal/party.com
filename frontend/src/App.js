@@ -9,6 +9,7 @@ import Birthday from "./pages/birthday";
 function App() {
   return (
     <>
+      {/* <Landing /> */}
       <Router>
         <Navbar />
         <Routes>
