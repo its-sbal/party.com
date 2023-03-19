@@ -1,11 +1,12 @@
 import React from "react";
 import { Carousel } from "antd";
-import adsimg1 from "../images/ads-1.jpg";
-import adsimg2 from "../images/weddingpic.jpg";
-import adsimg3 from "../images/holi.jpg";
+import ads1 from "../images/ads1.png";
+import ads2 from "../images/ads2.png";
+import ads3 from "../images/ads3.png";
+import ads4 from "../images/ads4.png";
 
 const contentStyle = {
-  height: "160px",
+  height: "190px",
   color: "#fff",
   lineHeight: "160px",
   textAlign: "center",
@@ -17,24 +18,28 @@ function Ads() {
     <Carousel autoplay>
       <div className="img1">
         <img
-          src={adsimg1}
-          style={{ height: "300px", width: "100%", display: "block" }}
+          src={ads4}
+          style={{ height: "320px", width: "100%", display: "block" }}
         />
       </div>
       <div className="img1">
         <img
-          src={adsimg2}
-          style={{ height: "300px", width: "100%", display: "block" }}
+          src={ads2}
+          style={{ height: "320px", width: "100%", display: "block" }}
         />
       </div>
       <div className="img1">
         <img
-          src={adsimg3}
-          style={{ height: "300px", width: "100%", display: "block" }}
+          src={ads3}
+          style={{ height: "320px", width: "100%", display: "block" }}
         />
       </div>
-      <div>
-        <h3 style={contentStyle}>4</h3>
+
+      <div className="img1">
+        <img
+          src={ads1}
+          style={{ height: "320px", width: "100%", display: "block" }}
+        />
       </div>
     </Carousel>
   );

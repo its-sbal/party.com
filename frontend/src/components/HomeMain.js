@@ -10,6 +10,8 @@ function HomeMain() {
       <div className="ads-card">
         <Ads />
       </div>
+      <HorizontalSpacer n={2} />
+
       <div className="flex-home">
         <div>
           <Card name="birthday" />
