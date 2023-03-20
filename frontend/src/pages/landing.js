@@ -137,7 +137,7 @@ function App() {
                   className="mx-3"
                   style={{ color: "#1266f1" }}
                 >
-                  <MDBIcon fab icon="github" size="sm" />
+                  <MDBIcon fab icon="instagram" size="sm" />
                 </MDBBtn>
               </div>
             </MDBCardBody>
