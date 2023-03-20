@@ -27,7 +27,7 @@ function About() {
           <div className="card">
             <img src={img1} alt="Jane" style={{ width: "100%" }} />
             <div className="container">
-              <h2>Soubhagya</h2>
+              <h2>Sudhansu</h2>
               <p>Some text that describes me lorem ipsum ipsum lorem.</p>
               <p>jane@example.com</p>
               <p>
@@ -40,7 +40,7 @@ function About() {
           <div className="card">
             <img src={img1} alt="Mike" style={{ width: "100%" }} />
             <div className="container">
-              <h2>Sudhansu</h2>
+              <h2>Soubhagya</h2>
               <p>Some text that describes me lorem ipsum ipsum lorem.</p>
               <p>mike@example.com</p>
               <p>
