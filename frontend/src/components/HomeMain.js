@@ -7,6 +7,7 @@ import marriagevector from "../images/wedding.png";
 import holivector from "../images/holinew1.png";
 import annivector from "../images/anniversary.png";
 import christvector from "../images/christmas1.png";
+
 function HomeMain() {
   return (
     <div>

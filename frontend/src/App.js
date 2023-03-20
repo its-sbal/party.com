@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import About from "./pages/about";
+import About from "./pages/navBarItems/about";
 import HomeMain from "./components/HomeMain";
-import Landing from "./pages/landing";
-import Birthday from "./pages/birthday";
+import Landing from "./pages/login/landing";
+import Birthday from "./pages/events/birthdayEvent";
 
 function App() {
   return (

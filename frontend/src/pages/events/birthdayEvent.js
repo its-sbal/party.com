@@ -1,7 +1,7 @@
 import EventOptionCard from "../../cred/EventOptionCard";
 import { HorizontalSpacer } from "@cred/neopop-web/lib/components";
-import "./birthday.css";
-import musicImg from "../images/birthday1.png";
+import "./birthdayEvent.css";
+import musicImg from "../../images/birthday1.png";
 
 import { Button } from "@cred/neopop-web/lib/components";
 
