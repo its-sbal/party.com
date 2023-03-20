@@ -2,7 +2,7 @@
   height: 260px;
   width: 180px;
   border-radius: 10px;
-  background-color: violet;
+  background-color: #ee82ee;
 }
 
 .option-image {
@@ -37,5 +37,5 @@
   display: block;
   background-color: rgb(203, 228, 228);
   position: relative;
-  bottom: -26%;
+  bottom: -21%;
 }
