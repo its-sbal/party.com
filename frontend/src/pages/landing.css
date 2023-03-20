@@ -1,7 +1,7 @@
 .background-radial-gradient {
   background-color: hsl(218, 41%, 15%);
   background-image: radial-gradient(
-      650px circle at 0% 0%,
+      610px circle at 0% 0%,
       hsl(218, 41%, 35%) 15%,
       hsl(218, 41%, 30%) 35%,
       hsl(218, 41%, 20%) 75%,
@@ -19,7 +19,7 @@
 }
 
 #radius-shape-1 {
-  height: 220px;
+  height: 210px;
   width: 220px;
   top: -60px;
   left: -130px;
