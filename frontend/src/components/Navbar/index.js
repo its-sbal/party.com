@@ -28,12 +28,15 @@ const Navbar = () => {
           <NavLink to="/contact-us" activeStyle>
             Contact Us
           </NavLink>
+          {/* <MDBBtn rounded color="success">
+            Become a Seller
+          </MDBBtn> */}
           <NavLink to="/landing" activeStyle>
-            Sign Up
+            Become a Seller
           </NavLink>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to="/landing">Sign In</NavBtnLink>
+          <NavBtnLink to="/signin">Sign In</NavBtnLink>
         </NavBtn>
       </Nav>
     </>

@@ -5,6 +5,7 @@ import About from "./pages/navBarItems/about";
 import HomeMain from "./components/HomeMain";
 import Landing from "./pages/login/landing";
 import Birthday from "./pages/events/birthdayEvent";
+import Signin from "./pages/login/signin";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/sign-up" element={<HomeMain />} />
           <Route path="/birthday" element={<Birthday />} />
           <Route path="/landing" element={<Landing />} />
+          <Route path="/signin" element={<Signin />} />
         </Routes>
       </Router>
     </>

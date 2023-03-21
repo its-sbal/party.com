@@ -1,7 +1,7 @@
 import React from "react";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "./landing.css";
+import "./signin.css";
 import {
   MDBBtn,
   MDBContainer,
@@ -14,8 +14,7 @@ import {
   MDBIcon,
 } from "mdb-react-ui-kit";
 
-import "./landing.css";
-function App() {
+function Signin() {
   return (
     <MDBContainer
       fluid
@@ -55,26 +54,6 @@ function App() {
 
           <MDBCard className="my-5 bg-glass">
             <MDBCardBody className="p-5">
-              <MDBRow>
-                <MDBCol col="6">
-                  <MDBInput
-                    wrapperClass="mb-4"
-                    label="First name"
-                    id="form1"
-                    type="text"
-                  />
-                </MDBCol>
-
-                <MDBCol col="6">
-                  <MDBInput
-                    wrapperClass="mb-4"
-                    label="Last name"
-                    id="form2"
-                    type="text"
-                  />
-                </MDBCol>
-              </MDBRow>
-
               <MDBInput
                 wrapperClass="mb-4"
                 label="Email"
@@ -88,25 +67,16 @@ function App() {
                 type="password"
               />
 
-              <div className="d-flex justify-content-center mb-4">
-                <MDBCheckbox
-                  name="flexCheck"
-                  value=""
-                  id="flexCheckDefault"
-                  label="Subscribe to our newsletter"
-                />
-              </div>
-
               <MDBBtn className="w-100 mb-4" size="md">
-                sign up
+                sign in
               </MDBBtn>
 
               <p>
-                Already a member? <a href="/signin">Sign in</a>
+                Not a member? <a href="/landing">Register</a>
               </p>
 
               <div className="text-center">
-                <p>or sign up with:</p>
+                <p>or sign in with:</p>
 
                 <MDBBtn
                   tag="a"
@@ -152,4 +122,4 @@ function App() {
   );
 }
 
-export default App;
+export default Signin;
