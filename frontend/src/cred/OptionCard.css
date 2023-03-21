@@ -8,7 +8,16 @@
 .option-image {
   margin: auto;
   display: block;
-  margin-top: 4%;
+  background-color: aqua;
+  border-radius: 10px;
+
+  height: 50%;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  border-radius: 10px;
 }
 
 .option-card {
@@ -19,8 +28,9 @@
 
   margin: auto;
   display: block;
-  position: relative;
-  bottom: -86%;
+  position: absolute;
+  margin-left: 0.6%;
+  margin-top: 13.3%;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");

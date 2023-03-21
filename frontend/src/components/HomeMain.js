@@ -2,9 +2,13 @@ import Card from "../cred/OptionCard";
 import "./HomeMain.css";
 import Ads from "../cred/Ads";
 import { Column, HorizontalSpacer } from "@cred/neopop-web/lib/components";
-import birthdayImg from "../images/birthdayvector3.png";
-import marriagevector from "../images/wedding.png";
-import holivector from "../images/holinew1.png";
+import birthdayImg from "../images/homeMain/birthdayCard.jpg";
+import birthdayImg2 from "../images/homeMain/birthdayCard2.jpg";
+
+import marriageImg from "../images/homeMain/marriageCard.jpg";
+import collegeImg2 from "../images/homeMain/collegeCard2.jpg";
+import cradleImg from "../images/homeMain/cradleCard.jpg";
+
 import annivector from "../images/anniversary.png";
 import christvector from "../images/christmas1.png";
 
@@ -19,19 +23,19 @@ function HomeMain() {
 
       <div className="flex-home">
         <div>
-          <Card name="birthday" image={birthdayImg} />
+          <Card name="birthday" image={birthdayImg2} />
         </div>
         <div>
-          <Card name="holi party" image={holivector} />
+          <Card name="marriage" image={marriageImg} />
         </div>
         <div>
-          <Card name="Christmas" image={christvector} />
+          <Card name="college events" image={collegeImg2} />
+        </div>
+        <div>
+          <Card name="cradle ceremony" image={cradleImg} />
         </div>
         <div>
           <Card name="anniversary" image={annivector} />
-        </div>
-        <div>
-          <Card name="marriage" image={marriagevector} />
         </div>
       </div>
     </div>

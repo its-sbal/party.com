@@ -11,11 +11,10 @@ function Card(props) {
     <div className="card-main">
       <Column>
         <div className="option-image">
-          <img src={props.image} style={{ width: "150px", height: "45%" }} />
+          <img src={props.image} className="image" />
         </div>
         <div className="option-card">
           <div className="option-heading">{props.name}</div>
-
           <Link to="/birthday">
             <div className="view-button"></div>
           </Link>
