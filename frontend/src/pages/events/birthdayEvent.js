@@ -3,7 +3,9 @@ import { HorizontalSpacer } from "@cred/neopop-web/lib/components";
 import "./birthdayEvent.css";
 import musicImg from "../../images/birthday1.png";
 
-import { Button } from "@cred/neopop-web/lib/components";
+import React, { useState } from "react";
+import { SearchOutlined } from "@ant-design/icons";
+import { Button, Radio, Space, Divider } from "antd";
 
 function Birthday() {
   return (
@@ -14,7 +16,21 @@ function Birthday() {
         style={{ height: "300px", width: "100%" }}
       />
       <HorizontalSpacer n={1} />
-      <div className="searchbar"></div>
+      <div className="searchbar">
+        <Button
+          className="searchIcon"
+          type="primary"
+          icon={
+            <SearchOutlined style={{ position: "relative", bottom: "0.6vh" }} />
+          }
+          size={"large"}
+          style={{
+            height: "9.8vh",
+            width: "9.8vh",
+            backgroundColor: "blueviolet",
+          }}
+        />
+      </div>
       <HorizontalSpacer n={2} />
 
       <div className="flex-event">
