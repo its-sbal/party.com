@@ -6,6 +6,7 @@ import HomeMain from "./components/HomeMain";
 import Landing from "./pages/login/landing";
 import Birthday from "./pages/events/birthdayEvent";
 import Signin from "./pages/login/signin";
+import ContactForm from "./pages/navBarItems/ContactUs";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <Route path="/" element={<HomeMain />} exact />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<HomeMain />} />
-          <Route path="/contact-us" element={<HomeMain />} />
+          <Route path="/contact-us" element={<ContactForm />} />
           <Route path="/sign-up" element={<HomeMain />} />
           <Route path="/birthday" element={<Birthday />} />
           <Route path="/landing" element={<Landing />} />
