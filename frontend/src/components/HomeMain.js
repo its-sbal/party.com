@@ -8,9 +8,7 @@ import birthdayImg2 from "../images/homeMain/birthdayCard2.jpg";
 import marriageImg from "../images/homeMain/marriageCard.jpg";
 import collegeImg2 from "../images/homeMain/collegeCard2.jpg";
 import cradleImg from "../images/homeMain/cradleCard.jpg";
-
-import annivector from "../images/anniversary.png";
-import christvector from "../images/christmas1.png";
+import othersImg from "../images/homeMain/othersCard.jpg";
 
 function HomeMain() {
   return (
@@ -35,7 +33,7 @@ function HomeMain() {
           <Card name="cradle ceremony" image={cradleImg} />
         </div>
         <div>
-          <Card name="anniversary" image={annivector} />
+          <Card name="Cultural Events" image={othersImg} />
         </div>
       </div>
     </div>
