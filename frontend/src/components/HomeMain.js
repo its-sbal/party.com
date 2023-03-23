@@ -19,7 +19,11 @@ function HomeMain() {
         <Ads />
       </div>
       <HorizontalSpacer n={2} />
-
+      <div className="tab1">
+        <p style={{ fontSize: "1rem" }}>
+          <span style={{ fontWeight: "bold" }}>Special Events</span>
+        </p>
+      </div>
       <div className="flex-home">
         <div>
           <Card name="birthday" image={birthdayImg2} color="#ffa43c" />
