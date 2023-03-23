@@ -21,19 +21,19 @@ function HomeMain() {
 
       <div className="flex-home">
         <div>
-          <Card name="birthday" image={birthdayImg2} />
+          <Card name="birthday" image={birthdayImg2} color="#ffa43c" />
         </div>
         <div>
-          <Card name="marriage" image={marriageImg} />
+          <Card name="marriage" image={marriageImg} color="#ff493c" />
         </div>
         <div>
-          <Card name="college events" image={collegeImg2} />
+          <Card name="college events" image={collegeImg2} color="#8200cd" />
         </div>
         <div>
-          <Card name="cradle ceremony" image={cradleImg} />
+          <Card name="cradle ceremony" image={cradleImg} color="#cd43ff" />
         </div>
         <div>
-          <Card name="Cultural Events" image={othersImg} />
+          <Card name="Cultural Events" image={othersImg} color="#ffbd43" />
         </div>
       </div>
     </div>

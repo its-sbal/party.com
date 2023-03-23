@@ -8,7 +8,7 @@ import image1 from "../images/wedding.png";
 
 function Card(props) {
   return (
-    <div className="card-main">
+    <div className="card-main" style={{ backgroundColor: props.color }}>
       <Column>
         <div className="option-image">
           <img src={props.image} className="image" />
