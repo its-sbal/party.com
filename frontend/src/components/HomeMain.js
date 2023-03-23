@@ -8,6 +8,7 @@ import birthdayImg2 from "../images/homeMain/birthdayCard2.jpg";
 import marriageImg from "../images/homeMain/marriageCard.jpg";
 import collegeImg2 from "../images/homeMain/collegeCard2.jpg";
 import cradleImg from "../images/homeMain/cradleCard.jpg";
+import cradleImg2 from "../images/homeMain/cradleCard2.jpg";
 import othersImg from "../images/homeMain/othersCard.jpg";
 
 function HomeMain() {
@@ -18,7 +19,11 @@ function HomeMain() {
         <Ads />
       </div>
       <HorizontalSpacer n={2} />
-
+      <div className="tab1">
+        <p style={{ fontSize: "1rem" }}>
+          <span style={{ fontWeight: "bold" }}>Special Events</span>
+        </p>
+      </div>
       <div className="flex-home">
         <div>
           <Card name="birthday" image={birthdayImg2} color="#ffa43c" />
@@ -30,7 +35,7 @@ function HomeMain() {
           <Card name="college events" image={collegeImg2} color="#8200cd" />
         </div>
         <div>
-          <Card name="cradle ceremony" image={cradleImg} color="#cd43ff" />
+          <Card name="cradle ceremony" image={cradleImg2} color="#cd43ff" />
         </div>
         <div>
           <Card name="Cultural Events" image={othersImg} color="#ffbd43" />
