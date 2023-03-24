@@ -4,9 +4,6 @@ import { FontVariant } from "@cred/neopop-web/lib/primitives";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Tilt from "react-parallax-tilt";
 
-import Birthday from "../pages/events/birthdayEvent";
-import image1 from "../images/wedding.png";
-
 function Card(props) {
   return (
     <Tilt
