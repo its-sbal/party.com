@@ -34,6 +34,9 @@ const Navbar = () => {
           <NavLink to="/landing" activeStyle>
             Become a Seller
           </NavLink>
+          <NavLink to="/concert" activeStyle>
+            My Tickets
+          </NavLink>
         </NavMenu>
         <NavBtn>
           <NavBtnLink to="/signin">Sign In</NavBtnLink>
