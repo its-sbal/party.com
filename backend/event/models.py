@@ -9,7 +9,7 @@ class user(models.Model):
     email = models.CharField(max_length=100,null=True,blank=True)
     password = models.CharField(max_length=100,null=True,blank=True)
     address = models.TextField(max_length=100,null=True,blank=True)
-    mobile = models.IntegerField(null=True,blank=True,validators=[MinValueValidator(1),MaxValueValidator(10)])
+    mobile = models.IntegerField(null=True,blank=True)
 
     def __str__(self):
         return self.fname
@@ -37,4 +37,4 @@ class orders(models.Model):
     bookFrom = models.DateField(auto_now_add=False)
     bookUpto = models.DateField(auto_now_add=False)
     isPaid = models.BooleanField(default=False)
-    totalPrice = models.IntegerField(null=True,blank=True,validators=[MinValueValidator(1),MaxValueValidator(10)])
+    totalPrice = models.IntegerField(null=True,blank=True)
