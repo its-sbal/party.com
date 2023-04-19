@@ -21,17 +21,17 @@ function Birthday() {
           className="searchIcon"
           type="primary"
           icon={
-            <SearchOutlined style={{ position: "relative", bottom: "0.6vh" }} />
+            <SearchOutlined style={{ position: "relative", bottom: "10%" }} />
           }
           size={"large"}
           style={{
-            height: "9.8vh",
-            width: "9.8vh",
+            height: "56px",
+            width: "56px",
             backgroundColor: "blueviolet",
           }}
         />
       </div>
-      <HorizontalSpacer n={2} />
+      <HorizontalSpacer n={4} />
 
       <div className="flex-event">
         <div>

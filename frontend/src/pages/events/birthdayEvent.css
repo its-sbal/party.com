@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 12vh; /* set a height for the div */
+  height: 68px; /* set a height for the div */
   width: 80%;
   margin: auto; /* center horizontally */
   background-color: rgb(12, 12, 80);
@@ -21,5 +21,6 @@
 }
 
 .searchIcon {
-  right: -78vh;
+  position: relative;
+  right: -46.5%;
 }
