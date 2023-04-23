@@ -11,7 +11,6 @@ function Services() {
     fetchProduct();
   }, []);
   console.log(products);
-
   return (
     <div>
       {products.map((product) => (
