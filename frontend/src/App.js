@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Services from "./pages/services/Services";
+import Footer from "./components/Footer";
 import About from "./pages/navBarItems/about";
 import HomeMain from "./components/HomeMain";
 import Landing from "./pages/login/landing";
@@ -28,6 +29,7 @@ function App() {
           {/* <Route path="/concert" element={<Concert />} /> */}
         </Routes>
       </Router>
+      <Footer />
     </>
   );
 }
