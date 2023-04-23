@@ -31,7 +31,7 @@ const Navbar = () => {
           {/* <MDBBtn rounded color="success">
             Become a Seller
           </MDBBtn> */}
-          <NavLink to="/landing" activeStyle>
+          <NavLink to="/vendor" activeStyle>
             Become a Seller
           </NavLink>
           <NavLink to="/concert" activeStyle>

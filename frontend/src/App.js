@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
+import Services from "./pages/services/Services";
 import About from "./pages/navBarItems/about";
 import HomeMain from "./components/HomeMain";
 import Landing from "./pages/login/landing";
@@ -18,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeMain />} exact />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<HomeMain />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/contact-us" element={<ContactForm />} />
           <Route path="/sign-up" element={<HomeMain />} />
           <Route path="/birthday" element={<Birthday />} />
