@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import VendorCard from "../../cred/VendorCard";
 
 function Services() {
   const [products, setProducts] = useState([]);
@@ -14,7 +15,7 @@ function Services() {
   return (
     <div>
       {products.map((product) => (
-        <p key={product._id}>{product.address}</p>
+        <VendorCard product={product} />
       ))}
     </div>
   );
