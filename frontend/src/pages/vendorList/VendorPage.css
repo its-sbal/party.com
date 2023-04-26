@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 68px; /* set a height for the div */
+  width: 80%;
+  margin: auto; /* center horizontally */
+  background-color: rgb(12, 12, 80);
+  margin-top: -35px;
+  z-index: 10;
+  position: relative;
+  border-radius: 10px;
+}
+
+.searchIcon {
+  position: relative;
+  right: -46.5%;
+}
+
+.vendorTitle {
+  font-family: "Tilt Warp", cursive;
+}
