@@ -15,7 +15,7 @@ function Footer() {
     <>
       <HorizontalSpacer n={5} />
 
-      <MDBFooter className="text-center" color="white" bgColor="dark">
+      <MDBFooter className="text-center" color="white" bgColor="black">
         <MDBContainer className="p-4">
           <section className="mb-4">
             <MDBBtn
@@ -145,7 +145,7 @@ function Footer() {
 
         <div
           className="text-center p-3"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+          style={{ backgroundColor: "rgba(0,0,0)" }}
         >
           © 2023 Copyright: party.com
         </div>
