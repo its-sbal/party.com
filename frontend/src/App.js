@@ -9,6 +9,7 @@ import Landing from "./pages/login/landing";
 import Birthday from "./pages/events/birthdayEvent";
 import Signin from "./pages/login/signin";
 import ContactForm from "./pages/navBarItems/ContactUs";
+import Vendorlog from "./pages/login/vendorlog";
 // import Concert from "./cred/concertTicket";
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
           <Route path="/birthday" element={<Birthday />} />
           <Route path="/landing" element={<Landing />} />
           <Route path="/signin" element={<Signin />} />
+          <Route path="/vendorlog" element={<Vendorlog />} />
+
           {/* <Route path="/concert" element={<Concert />} /> */}
         </Routes>
       </Router>
