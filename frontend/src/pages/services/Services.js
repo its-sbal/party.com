@@ -13,7 +13,7 @@ function Services() {
   }, []);
   console.log(products);
   return (
-    <div>
+    <div className="row">
       {products.map((product) => (
         <VendorCard product={product} />
       ))}
