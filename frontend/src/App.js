@@ -10,6 +10,7 @@ import Birthday from "./pages/events/birthdayEvent";
 import Signin from "./pages/login/signin";
 import ContactForm from "./pages/navBarItems/ContactUs";
 import Vendorlog from "./pages/login/vendorlog";
+import VendorPage from "./pages/vendorList/VendorsPage";
 // import Concert from "./cred/concertTicket";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path="/vendorlog" element={<Vendorlog />} />
 
           {/* <Route path="/concert" element={<Concert />} /> */}
+          <Route path="/vendor" element={<VendorPage />} />
         </Routes>
       </Router>
       <Footer />
