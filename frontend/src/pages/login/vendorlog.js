@@ -8,6 +8,11 @@ import "react-phone-input-2/lib/style.css";
 import { auth } from "./firebase.config";
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import { toast, Toaster } from "react-hot-toast";
+import Card from "react-bootstrap/Card";
+import CardGroup from "react-bootstrap/CardGroup";
+import image1 from "./Master.png";
+import image2 from "./master2.png";
+import image3 from "./master3.jpg";
 
 const Vendorlog = () => {
   const [otp, setOtp] = useState("");
@@ -69,7 +74,7 @@ const Vendorlog = () => {
   }
 
   return (
-    <section className="bg-emerald-500 flex items-center justify-center h-screen">
+    <div className="bg-emerald-300 flex items-center justify-center ">
       <div>
         <Toaster toastOptions={{ duration: 4000 }} />
         <div id="recaptcha-container"></div>
@@ -79,13 +84,13 @@ const Vendorlog = () => {
           </h2>
         ) : (
           <div className="w-80 flex flex-col gap-4 rounded-lg p-4">
-            <h1 className="text-center leading-normal text-white font-medium text-3xl mb-6">
+            <h1 className="text-center leading-normal text-white font-medium text-1xl mb-6">
               <br /> Lunch Your Business in 10 minutes
             </h1>
             {showOTP ? (
               <>
                 <div className="bg-white text-emerald-500 w-fit mx-auto p-4 rounded-full">
-                  <BsFillShieldLockFill size={30} />
+                  <BsFillShieldLockFill size={10} />
                 </div>
                 <label
                   htmlFor="otp"
@@ -107,7 +112,7 @@ const Vendorlog = () => {
                   className="bg-emerald-600 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
                 >
                   {loading && (
-                    <CgSpinner size={20} className="mt-1 animate-spin" />
+                    <CgSpinner size={10} className="mt-1 animate-spin" />
                   )}
                   <span>Verify OTP</span>
                 </button>
@@ -115,7 +120,7 @@ const Vendorlog = () => {
             ) : (
               <>
                 <div className="bg-white text-emerald-500 w-fit mx-auto p-4 rounded-full">
-                  <BsTelephoneFill size={30} />
+                  <BsTelephoneFill size={20} />
                 </div>
                 <label
                   htmlFor=""
@@ -129,7 +134,7 @@ const Vendorlog = () => {
                   className="bg-emerald-600 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
                 >
                   {loading && (
-                    <CgSpinner size={20} className="mt-1 animate-spin" />
+                    <CgSpinner size={15} className="mt-1 animate-spin" />
                   )}
                   <span>Send code via SMS</span>
                 </button>
@@ -138,7 +143,45 @@ const Vendorlog = () => {
           </div>
         )}
       </div>
-    </section>
+      <CardGroup>
+        <Card>
+          <Card.Img variant="top" src={image1} />
+          <Card.Body>
+            <Card.Text>
+              "BBD and BDS sales compounded the consumer demand which led to a
+              milestone of 150% YoY revenue growth from party.com"
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <small className="text-muted">Odisha</small>
+          </Card.Footer>
+        </Card>
+        <Card>
+          <Card.Img variant="top" src={image2} />
+          <Card.Body>
+            <Card.Text>
+              "Starting with 1, party.com helped me expand to 6 categories with
+              5x growth year on year!"
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <small className="text-muted">Mumbai</small>
+          </Card.Footer>
+        </Card>
+        <Card>
+          <Card.Img variant="top" src={image3} />
+          <Card.Body>
+            <Card.Text>
+              "With part.com, we went from Rs.20,000 to Rs.2 Cr in sales per
+              annum!"
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <small className="text-muted">Bangalore</small>
+          </Card.Footer>
+        </Card>
+      </CardGroup>
+    </div>
   );
 };
 
