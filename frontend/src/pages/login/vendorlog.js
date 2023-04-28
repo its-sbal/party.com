@@ -10,8 +10,8 @@ import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import { toast, Toaster } from "react-hot-toast";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
-import image1 from "./Master.png";
-import image2 from "./master2.png";
+import image1 from "./master5.jpg";
+import image2 from "./master4.jpg";
 import image3 from "./master3.jpg";
 
 const Vendorlog = () => {
