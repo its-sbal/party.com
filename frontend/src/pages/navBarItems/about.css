@@ -3,6 +3,16 @@
 *:after {
   box-sizing: inherit;
 }
+.odi1 {
+  width: 80%;
+}
+odi3 {
+  font-size: 48px;
+}
+.odi2 {
+  font-family: "Brush Script MT", cursive;
+  font-size: 24px;
+}
 .column {
   float: left;
   width: 33.3%;
@@ -17,7 +27,7 @@
 .about-section {
   padding: 50px;
   text-align: center;
-  background-color: #474e5d;
+  background-color: #364aff;
   color: white;
 }
 
@@ -33,7 +43,7 @@
 }
 
 .title {
-  color: grey;
+  color: red;
 }
 
 .button {
