@@ -11,6 +11,7 @@ import Signin from "./pages/login/signin";
 import ContactForm from "./pages/navBarItems/ContactUs";
 import Vendorlog from "./pages/login/vendorlog";
 import VendorPage from "./pages/vendorList/VendorsPage";
+import VendorReg from "./pages/login/vendorReg";
 // import Concert from "./cred/concertTicket";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/landing" element={<Landing />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/vendorlog" element={<Vendorlog />} />
+          <Route path="/vendorReg" element={<VendorReg />} />
 
           {/* <Route path="/concert" element={<Concert />} /> */}
           <Route path="/vendor" element={<VendorPage />} />
