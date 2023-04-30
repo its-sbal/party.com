@@ -26,7 +26,7 @@ function HomeMain() {
       </div>
       <div className="flex-home">
         <div>
-          <Card name="birthda" image={birthdayImg2} color="#ffa43c" />
+          <Card name="birthday" image={birthdayImg2} color="#ffa43c" />
         </div>
         <div>
           <Card name="marriage" image={marriageImg} color="#ff493c" />

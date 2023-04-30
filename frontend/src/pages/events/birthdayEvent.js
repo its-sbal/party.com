@@ -1,8 +1,13 @@
 import EventOptionCard from "../../cred/EventOptionCard";
+import Card from "../../cred/OptionCard";
 import { HorizontalSpacer } from "@cred/neopop-web/lib/components";
 import "./birthdayEvent.css";
 import musicImg from "../../images/birthday1.png";
-
+import catering1 from "../../images/birthday/catering1.jpg";
+import decoration1 from "../../images/birthday/decoration1.png";
+import cakes1 from "../../images/birthday/cakes1.png";
+import hall1 from "../../images/birthday/hall1.jpg";
+import enter1 from "../../images/birthday/enter1.jpg";
 import React, { useState } from "react";
 import { SearchOutlined } from "@ant-design/icons";
 import { Button, Radio, Space, Divider } from "antd";
@@ -35,40 +40,26 @@ function Birthday() {
 
       <div className="flex-event">
         <div>
-          <EventOptionCard
-            title="Decoration"
-            image="https://png.pngtree.com/png-clipart/20221014/ourmid/pngtree-fresh-wedding-decoration-png-image_6150196.png"
+          <Card name="Decoration" image={decoration1} color="#ff493c" />
+        </div>
+        <div>
+          <Card name="Catering" image={catering1} color="#ff493c" />
+        </div>
+        <div>
+          <Card
+            name="Garlands"
+            image="https://sc04.alicdn.com/kf/Hc0e29560b91c4dca8e46edb7124c3834G.jpg"
+            color="#ff493c"
           />
         </div>
         <div>
-          <EventOptionCard
-            title="Catering"
-            image="https://png.pngtree.com/png-clipart/20190115/ourmid/pngtree-hand-drawn-cartoon-gourmet-catering-chef-decorative-pattern-hand-drawn-cartoon-png-image_362717.jpg"
-          />
+          <Card name="Cakes" image={cakes1} color="#ff493c" />
         </div>
         <div>
-          <EventOptionCard
-            title="Garlands"
-            image="https://png.pngtree.com/png-vector/20220114/ourmid/pngtree-marigold-flower-door-garland-decoration-png-image_4297585.png"
-          />
+          <Card name="Celebration Hall" image={hall1} color="#ff493c" />
         </div>
         <div>
-          <EventOptionCard
-            title="Cakes"
-            image="https://png.pngtree.com/element_our/20190524/ourmid/pngtree-cartoon-birthday-cake-free-element-image_1105574.jpg"
-          />
-        </div>
-        <div>
-          <EventOptionCard
-            title="Wedding Hall"
-            image="https://png.pngtree.com/png-clipart/20210129/ourmid/pngtree-hotel-express-hotel-png-image_2813157.jpg"
-          />
-        </div>
-        <div>
-          <EventOptionCard
-            title="Entertainment"
-            image="https://png.pngtree.com/png-vector/20220423/ourmid/pngtree-a-man-wearing-vr-headset-floating-in-cyberspace-simulation-of-the-png-image_4552793.png"
-          />
+          <Card name="Entertainment" image={enter1} color="#ff493c" />
         </div>
       </div>
     </div>
