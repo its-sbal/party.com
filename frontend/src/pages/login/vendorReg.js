@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, Button } from "semantic-ui-react";
 import { useForm } from "react-hook-form";
+import "./vendorReg.css";
 
 export default function FormValidation() {
   const {
@@ -12,7 +13,7 @@ export default function FormValidation() {
     console.log(data);
   };
   return (
-    <div>
+    <div className="cric1">
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Form.Field>
           <label>First Name</label>
@@ -79,7 +80,6 @@ export default function FormValidation() {
         <Form.Field>
           <label>Address</label>
           <input
-            placeholder="Address"
             type="text"
             {...register("Address", { required: true, maxLength: 100 })}
           />
@@ -95,7 +95,9 @@ export default function FormValidation() {
           />
         </Form.Field>
         {errors.phNumber && <p>Please check the Phone Number</p>}
-        <Button type="submit">Submit</Button>
+        <div className="cric2">
+          <Button type="submit">Submit</Button>
+        </div>
       </Form>
     </div>
   );
