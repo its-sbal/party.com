@@ -18,7 +18,7 @@ import {
 import styled from "styled-components";
 
 const ContentWrapper = styled.div`
-  padding: 20px;
+  padding: 2px;
 `;
 
 const EventOptionCard = (props) => {
@@ -36,18 +36,8 @@ const EventOptionCard = (props) => {
     >
       <ContentWrapper>
         <Column>
-          <img src={props.image} style={{ height: "110px", width: "130px" }} />
+          <img src={props.image} style={{ height: "140px", width: "168px" }} />
           <HorizontalSpacer n={1} />
-          <div>
-            <Tag
-              colorConfig={{
-                background: mainColors.yellow,
-                color: colorPalette.popWhite[400],
-              }}
-            >
-              Trending
-            </Tag>
-          </div>
 
           <HorizontalSpacer n={2} />
           <Button
