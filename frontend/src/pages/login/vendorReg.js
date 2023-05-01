@@ -11,6 +11,21 @@ export default function FormValidation() {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
+    fetch("http://127.0.0.1:8000/serviceUpdate/", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success:", data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   };
   return (
     <div className="cric1">
