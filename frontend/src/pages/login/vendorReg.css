@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.2s liner;
+}
+.cric1 {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-image: url("back3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.cric1 form {
+  height: 550px;
+  width: 450px;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(70px);
+}
+.cric1 form h1 {
+  font-size: 30px;
+  padding: 30px 0;
+  color: red;
+  letter-spacing: 3px;
+}
+.cric1 form label {
+  padding: 10px;
+  font-size: 20px;
+  color: #bbb;
+}
+.cric1 form input {
+  outline: none;
+  border: none;
+  height: 28px;
+  width: 62%;
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset;
+  font-size: 17px;
+  padding: 0 10px;
+  margin: 15px 0;
+  letter-spacing: 1px;
+}
+.cric1 form input[type="submit"] {
+  width: 90%;
+  cursor: pointer;
+  background-color: red;
+  background: liner-gradient(90deg, deeppink, blueviolet);
+  margin-top: 30px;
+  border-radius: 50px;
+}

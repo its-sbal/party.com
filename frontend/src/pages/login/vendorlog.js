@@ -13,6 +13,8 @@ import CardGroup from "react-bootstrap/CardGroup";
 import image1 from "./master5.jpg";
 import image2 from "./master4.jpg";
 import image3 from "./master3.jpg";
+import { Link } from "react-router-dom";
+import vendorReg from "./vendorReg";
 
 const Vendorlog = () => {
   const [otp, setOtp] = useState("");
@@ -50,7 +52,7 @@ const Vendorlog = () => {
         window.confirmationResult = confirmationResult;
         setLoading(false);
         setShowOTP(true);
-        toast.success("OTP sended successfully!");
+        toast.success("OTP sent successfully!");
       })
       .catch((error) => {
         console.log(error);
@@ -72,6 +74,7 @@ const Vendorlog = () => {
         setLoading(false);
       });
   }
+  const shoot = () => {};
 
   return (
     <div className="bg-emerald-300 flex items-center justify-center ">
@@ -81,6 +84,10 @@ const Vendorlog = () => {
         {user ? (
           <h2 className="text-center text-white font-medium text-2xl">
             👍Login Success
+            {"\n"}
+            <Link style={{ color: "green" }} to="/vendorReg">
+              Register
+            </Link>
           </h2>
         ) : (
           <div className="w-80 flex flex-col gap-4 rounded-lg p-4">

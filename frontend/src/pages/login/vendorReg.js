@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, Button } from "semantic-ui-react";
 import { useForm } from "react-hook-form";
+import "./vendorReg.css";
 
 export default function FormValidation() {
   const {
@@ -10,12 +11,28 @@ export default function FormValidation() {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
+    fetch("http://127.0.0.1:8000/serviceUpdate/", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success:", data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   };
   return (
-    <div>
+    <div className="cric1">
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Form.Field>
-          <label>First Name</label>
+          <h1>REGISTER</h1>
+          <label>Name...</label>
           <input
             placeholder="Name"
             type="text"
@@ -33,7 +50,7 @@ export default function FormValidation() {
         </Form.Field>
         {errors.Service && <p>Please check the Service</p>}
         <Form.Field>
-          <label>Description</label>
+          <label>Desc...</label>
           <input
             placeholder="Description"
             type="text"
@@ -43,7 +60,7 @@ export default function FormValidation() {
         {errors.Description && <p>Please check the Description</p>}
 
         <Form.Field>
-          <label>Price</label>
+          <label>Price..</label>
           <input
             placeholder="Price"
             type="number"
@@ -52,7 +69,7 @@ export default function FormValidation() {
         </Form.Field>
         {errors.Price && <p>Please check the Price</p>}
         <Form.Field>
-          <label>Email</label>
+          <label>Email..</label>
           <input
             placeholder="Email"
             type="email"
@@ -65,7 +82,7 @@ export default function FormValidation() {
         </Form.Field>
         {errors.email && <p>Please check the Email</p>}
         <Form.Field>
-          <label>Password</label>
+          <label>Pass...</label>
           <input
             placeholder="Password"
             type="password"
@@ -79,7 +96,6 @@ export default function FormValidation() {
         <Form.Field>
           <label>Address</label>
           <input
-            placeholder="Address"
             type="text"
             {...register("Address", { required: true, maxLength: 100 })}
           />
@@ -87,7 +103,7 @@ export default function FormValidation() {
         {errors.Address && <p>Please check the Address</p>}
 
         <Form.Field>
-          <label>Phone Number</label>
+          <label>Phone..</label>
           <input
             placeholder="phNumber"
             type="text"
@@ -95,7 +111,9 @@ export default function FormValidation() {
           />
         </Form.Field>
         {errors.phNumber && <p>Please check the Phone Number</p>}
-        <Button type="submit">Submit</Button>
+        <div className="cric2">
+          <Button type="submit">Submit</Button>
+        </div>
       </Form>
     </div>
   );
