@@ -16,7 +16,8 @@ export default function FormValidation() {
     <div className="cric1">
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Form.Field>
-          <label>First Name</label>
+          <h1>REGISTER</h1>
+          <label>Name...</label>
           <input
             placeholder="Name"
             type="text"
@@ -34,7 +35,7 @@ export default function FormValidation() {
         </Form.Field>
         {errors.Service && <p>Please check the Service</p>}
         <Form.Field>
-          <label>Description</label>
+          <label>Desc...</label>
           <input
             placeholder="Description"
             type="text"
@@ -44,7 +45,7 @@ export default function FormValidation() {
         {errors.Description && <p>Please check the Description</p>}
 
         <Form.Field>
-          <label>Price</label>
+          <label>Price..</label>
           <input
             placeholder="Price"
             type="number"
@@ -53,7 +54,7 @@ export default function FormValidation() {
         </Form.Field>
         {errors.Price && <p>Please check the Price</p>}
         <Form.Field>
-          <label>Email</label>
+          <label>Email..</label>
           <input
             placeholder="Email"
             type="email"
@@ -66,7 +67,7 @@ export default function FormValidation() {
         </Form.Field>
         {errors.email && <p>Please check the Email</p>}
         <Form.Field>
-          <label>Password</label>
+          <label>Pass...</label>
           <input
             placeholder="Password"
             type="password"
@@ -87,7 +88,7 @@ export default function FormValidation() {
         {errors.Address && <p>Please check the Address</p>}
 
         <Form.Field>
-          <label>Phone Number</label>
+          <label>Phone..</label>
           <input
             placeholder="phNumber"
             type="text"
