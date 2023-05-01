@@ -23,8 +23,14 @@
   font-family: "Tilt Warp", cursive;
 }
 
-.cards {
+.list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 3%;
+}
+
+.list .vendorCard {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
 }

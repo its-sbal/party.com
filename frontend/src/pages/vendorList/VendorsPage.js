@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { HorizontalSpacer } from "@cred/neopop-web/lib/components";
 import { SearchOutlined } from "@ant-design/icons";
-import { Button, Radio, Space, Divider } from "antd";
+import { Button, Radio, Space, Divider, Row, Col } from "antd";
 import VendorCard from "../../cred/VendorCard";
 
 function VendorPage() {
@@ -47,11 +47,13 @@ function VendorPage() {
           All Available Vendor's
         </div>
         <div className="list">
-          <div className="row">
+          <Row gutter={[16, 16]}>
             {products.map((product) => (
-              <VendorCard product={product} />
+              <Col span={6}>
+                <VendorCard product={product} />
+              </Col>
             ))}
-          </div>
+          </Row>
         </div>
       </div>
     </>
