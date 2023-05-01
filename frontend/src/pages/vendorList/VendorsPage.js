@@ -1,9 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { HorizontalSpacer } from "@cred/neopop-web/lib/components";
 import { SearchOutlined } from "@ant-design/icons";
 import { Button, Radio, Space, Divider } from "antd";
+import VendorCard from "../../cred/VendorCard";
 
 function VendorPage() {
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    async function fetchProduct() {
+      const { data } = await axios.get("http://127.0.0.1:8000/service/");
+      setProducts(data);
+    }
+    fetchProduct();
+  }, []);
+  console.log(products);
   return (
     <>
       <div>
@@ -34,6 +45,13 @@ function VendorPage() {
           style={{ fontFamily: "Tilt Warp", fontSize: "30px" }}
         >
           All Available Vendor's
+        </div>
+        <div className="list">
+          <div className="row">
+            {products.map((product) => (
+              <VendorCard product={product} />
+            ))}
+          </div>
         </div>
       </div>
     </>
