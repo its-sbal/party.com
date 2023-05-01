@@ -4,10 +4,12 @@ import { HorizontalSpacer } from "@cred/neopop-web/lib/components";
 import "./birthdayEvent.css";
 import musicImg from "../../images/birthday1.png";
 import catering1 from "../../images/birthday/catering1.jpg";
-import decoration1 from "../../images/birthday/decoration1.png";
 import cakes1 from "../../images/birthday/cakes1.png";
+import cakes2 from "../../images/birthday/cakes2.jpg";
+
 import hall1 from "../../images/birthday/hall1.jpg";
 import enter1 from "../../images/birthday/enter1.jpg";
+import decoration1 from "../../images/birthday/decor1.jpg";
 import React, { useState } from "react";
 import { SearchOutlined } from "@ant-design/icons";
 import { Button, Radio, Space, Divider } from "antd";
@@ -40,10 +42,10 @@ function Birthday() {
 
       <div className="flex-event">
         <div>
-          <Card name="Decoration" image={decoration1} color="#ff493c" />
+          <Card name="Decoration" image={decoration1} color="#f5a15d" />
         </div>
         <div>
-          <Card name="Catering" image={catering1} color="#ff493c" />
+          <Card name="Catering" image={catering1} color="#bd3e08" />
         </div>
         <div>
           <Card
@@ -53,10 +55,10 @@ function Birthday() {
           />
         </div>
         <div>
-          <Card name="Cakes" image={cakes1} color="#ff493c" />
+          <Card name="Cakes" image={cakes2} color="#8348e8" />
         </div>
         <div>
-          <Card name="Celebration Hall" image={hall1} color="#ff493c" />
+          <Card name="Celebration Hall" image={hall1} color="#e8a848" />
         </div>
         <div>
           <Card name="Entertainment" image={enter1} color="#ff493c" />
