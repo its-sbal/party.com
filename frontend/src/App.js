@@ -13,6 +13,7 @@ import Vendorlog from "./pages/login/vendorlog";
 import VendorPage from "./pages/vendorList/VendorsPage";
 import VendorReg from "./pages/login/vendorReg";
 import Ticket from "./components/concertTicket/Ticket";
+import VendorPersonalPage from "./pages/vendorList/VendorPersonalPage";
 // import Concert from "./cred/concertTicket";
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           {/* <Route path="/concert" element={<Concert />} /> */}
           <Route path="/vendor" element={<VendorPage />} />
           <Route path="/t" element={<Ticket />} />
+          <Route path="/vendor/:vendorId" element={<VendorPersonalPage />} />
         </Routes>
       </Router>
       <Footer />

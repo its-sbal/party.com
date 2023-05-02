@@ -20,6 +20,17 @@ def service(request):
     return Response(serializer.data)
 
 
+@api_view(['GET'])
+def service_detail(request, vendor_id):
+    try:
+        vendor_obj = vendor.objects.get(pk=vendor_id)
+    except vendor.DoesNotExist:
+        return Response(status=404)
+
+    serializer = vendorSerializer(vendor_obj)
+    return Response(serializer.data)
+
+
 @csrf_exempt
 def serviceUpdate(request):
     if request.method == "POST":
