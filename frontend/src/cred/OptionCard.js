@@ -20,7 +20,7 @@ function Card(props) {
           </div>
           <div className="option-card">
             <div className="option-heading">{props.name}</div>
-            <Link to="/birthday">
+            <Link to={"/" + props.name}>
               <div className="view-button"></div>
             </Link>
           </div>
