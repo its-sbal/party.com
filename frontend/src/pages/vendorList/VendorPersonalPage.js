@@ -57,6 +57,14 @@ function VendorPersonalPage() {
                   Address
                 </div>
               </Row>
+              <Row>
+                <div
+                  className=".vendorTitle"
+                  style={{ fontFamily: "Tilt Warp", fontSize: "20px" }}
+                >
+                  {product.address}
+                </div>
+              </Row>
             </Col>
           </Row>
           <Row>
