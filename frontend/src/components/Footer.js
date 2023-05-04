@@ -23,7 +23,7 @@ function Footer() {
               color="light"
               floating
               className="m-1"
-              href="#!"
+              href="https://www.facebook.com/MSDhoni/"
               role="button"
             >
               <MDBIcon fab icon="facebook-f" />
@@ -34,7 +34,7 @@ function Footer() {
               color="light"
               floating
               className="m-1"
-              href="#!"
+              href="https://www.twitter.com/msdhoni/"
               role="button"
             >
               <MDBIcon fab icon="twitter" />
@@ -45,7 +45,7 @@ function Footer() {
               color="light"
               floating
               className="m-1"
-              href="#!"
+              href="https://wwww.google.com/msdhoni/"
               role="button"
             >
               <MDBIcon fab icon="google" />
@@ -56,7 +56,7 @@ function Footer() {
               color="light"
               floating
               className="m-1"
-              href="#!"
+              href="https://www.instagram.com/mahi7781/"
               role="button"
             >
               <MDBIcon fab icon="instagram" />
@@ -67,7 +67,7 @@ function Footer() {
               color="light"
               floating
               className="m-1"
-              href="#!"
+              href="https://in.linkedin.com/in/ravindrajadeja"
               role="button"
             >
               <MDBIcon fab icon="linkedin-in" />
@@ -78,7 +78,7 @@ function Footer() {
               color="light"
               floating
               className="m-1"
-              href="#!"
+              href="https://github.com/its-sbal/party.com"
               role="button"
             >
               <MDBIcon fab icon="github" />
@@ -87,57 +87,71 @@ function Footer() {
           <section className="">
             <MDBRow>
               <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
-                <h5 className="text-uppercase">Links</h5>
+                <h4 className="text-uppercase">Consumer Policy</h4>
 
                 <ul className="list-unstyled mb-0">
                   <li>
                     <a href="#!" className="text-white">
-                      Link 1
+                      Return Policy
                     </a>
                   </li>
                   <li>
                     <a href="#!" className="text-white">
-                      Link 2
+                      Terms of use
                     </a>
                   </li>
                   <li>
                     <a href="#!" className="text-white">
-                      Link 3
+                      Security
                     </a>
                   </li>
                   <li>
                     <a href="#!" className="text-white">
-                      Link 4
+                      Privacy
                     </a>
                   </li>
                 </ul>
               </MDBCol>
 
               <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
-                <h5 className="text-uppercase">Links</h5>
+                <h4 className="text-uppercase">Help</h4>
 
                 <ul className="list-unstyled mb-0">
                   <li>
                     <a href="#!" className="text-white">
-                      Link 1
+                      Payments
                     </a>
                   </li>
                   <li>
                     <a href="#!" className="text-white">
-                      Link 2
+                      Shipping
                     </a>
                   </li>
                   <li>
                     <a href="#!" className="text-white">
-                      Link 3
+                      Cancellation and Returns
                     </a>
                   </li>
                   <li>
                     <a href="#!" className="text-white">
-                      Link 4
+                      FAQ
                     </a>
                   </li>
                 </ul>
+              </MDBCol>
+
+              <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
+                <h4 className="text-uppercase">Mail us</h4>
+                <h6>
+                  <a href="customersupport.party.com.in">
+                    customersupport.party.com.in
+                  </a>
+                </h6>
+              </MDBCol>
+
+              <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
+                <h4 className="text-uppercase">Registered Office Address</h4>
+                <h6>Silicon Institute Of Technology,Patia,Bhubaneswar</h6>
               </MDBCol>
             </MDBRow>
           </section>
