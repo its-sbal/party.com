@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { HorizontalSpacer } from "@cred/neopop-web/lib/components";
 import { SearchOutlined } from "@ant-design/icons";
-import { Button, Radio, Space, Divider, Row, Col } from "antd";
+import { Button, Input, Radio, Space, Divider, Row, Col } from "antd";
 import VendorCard from "../../cred/VendorCard";
-
+import "./VendorPage.css";
 function VendorPage() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
@@ -25,6 +25,7 @@ function VendorPage() {
         />
         <HorizontalSpacer n={1} />
         <div className="searchbar">
+          <Input className="search-input" />
           <Button
             className="searchIcon"
             type="primary"
@@ -33,9 +34,10 @@ function VendorPage() {
             }
             size={"large"}
             style={{
-              height: "56px",
-              width: "56px",
+              height: "4rem",
+              width: "4rem",
               backgroundColor: "blueviolet",
+              boxShadow: "0px 8px 15px rgba(0, 0, 0, 0.1) !important",
             }}
           />
         </div>
