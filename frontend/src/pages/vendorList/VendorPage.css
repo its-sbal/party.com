@@ -2,9 +2,10 @@
 
 .searchbar {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 68px; /* set a height for the div */
+
+  justify-content: flex-start;
+  padding-left: 2rem;
+  height: 90px; /* set a height for the div */
   width: 80%;
   margin: auto; /* center horizontally */
   background-color: rgb(12, 12, 80);
@@ -13,10 +14,23 @@
   position: relative;
   border-radius: 10px;
 }
-
+.search-input {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  width: 60%;
+}
 .searchIcon {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   position: relative;
-  right: -46.5%;
+  right: -24.6rem;
+}
+
+.searchIcon:active {
+  transform: translateY(2rem);
+  box-shadow: none;
 }
 
 .vendorTitle {

@@ -10,6 +10,7 @@ import collegeImg2 from "../images/homeMain/collegeCard2.jpg";
 import cradleImg from "../images/homeMain/cradleCard.jpg";
 import cradleImg2 from "../images/homeMain/cradleCard2.jpg";
 import othersImg from "../images/homeMain/othersCard.jpg";
+import ConcertCard from "../cred/ConcertCard";
 
 function HomeMain() {
   return (
@@ -41,6 +42,14 @@ function HomeMain() {
           <Card name="Cultural Events" image={othersImg} color="#ffbd43" />
         </div>
       </div>
+      <HorizontalSpacer n={2} />
+      <div className="tab2">
+        <p style={{ fontSize: "1rem" }}>
+          <span style={{ fontWeight: "bold" }}>Concerts</span>
+        </p>
+      </div>
+
+      <ConcertCard />
     </div>
   );
 }
