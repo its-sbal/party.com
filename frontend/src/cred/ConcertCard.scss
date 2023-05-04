@@ -21,8 +21,8 @@ p + p {
 .container {
   padding: 40px 80px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 .card-wrap {
