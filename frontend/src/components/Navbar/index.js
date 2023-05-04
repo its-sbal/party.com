@@ -37,7 +37,7 @@ const Navbar = () => {
           <NavLink to="/vendorlog" activeStyle>
             Become a Seller
           </NavLink>
-          <NavLink to="/vendorReg" activeStyle>
+          <NavLink to="" activeStyle>
             My Tickets
           </NavLink>
         </NavMenu>
