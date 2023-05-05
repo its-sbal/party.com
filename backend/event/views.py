@@ -45,3 +45,4 @@ def serviceUpdate(request):
         # save to database
         vendor.objects.create(vendorName=name, service=service, description=description, price=price, email=email)
         return JsonResponse({"status": "success"})
+

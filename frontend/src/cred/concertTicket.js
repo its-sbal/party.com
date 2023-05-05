@@ -3,7 +3,7 @@ import "./concertTicket.css";
 
 function Concert() {
   return (
-    <div className="body">
+    <div className="body1">
       <div className="ticket">
         <div className="left">
           <div className="image">

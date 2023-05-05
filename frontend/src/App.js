@@ -1,4 +1,8 @@
+import React from "react";
+import { Provider } from "react-redux";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { createStore } from "redux";
+import rootReducer from "./cred/reducers";
 
 import Navbar from "./components/Navbar";
 import Services from "./pages/services/Services";
@@ -16,17 +20,20 @@ import Ticket from "./components/concertTicket/Ticket";
 import VendorPersonalPage from "./pages/vendorList/VendorPersonalPage";
 import ConcertCard from "./cred/ConcertCard";
 // import Concert from "./cred/concertTicket";
+import Cart from "./cred/Cart";
+
+const store = createStore(rootReducer);
 
 function App() {
   return (
-    <>
+    <Provider store={store}>
       {/* <Landing /> */}
       <Router>
         <Navbar />
         <Routes>
           <Route path="/" element={<HomeMain />} exact />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/services" element={<Cart />} />
           <Route path="/contact-us" element={<ContactForm />} />
           <Route path="/sign-up" element={<HomeMain />} />
           <Route path="/birthday" element={<Birthday />} />
@@ -43,7 +50,7 @@ function App() {
         </Routes>
       </Router>
       <Footer />
-    </>
+    </Provider>
   );
 }
 

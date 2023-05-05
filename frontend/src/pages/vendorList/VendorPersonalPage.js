@@ -190,7 +190,7 @@ function VendorPersonalPage() {
                 </Col>
                 <Col style={{ position: "relative", left: "-14rem" }}>
                   <SocialIcon
-                    network="tiktok"
+                    url="https://tiktok.com/jaketrent"
                     style={{ height: 40, width: 40 }}
                   />
                 </Col>
