@@ -13,6 +13,26 @@ function Cart() {
     totalPrice += parseInt(item.price);
   });
 
+<<<<<<< HEAD
+=======
+  //adding id of vendor to array===========
+  // Extract the values from cartItems and store them in an array
+  // const myArrayFieldValues = cartItems.map((item) => item._id);
+
+  // fetch("http://127.0.0.1:8000/userUpdate/", {
+  //     method: "POST",
+  //     headers: {
+  //       Accept: "application/json, text/plain, */*",
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(data),
+  //   })
+  //   .then((response) => {
+  //     // Handle the response here
+  //     console.log(response.data);
+  //   });
+
+>>>>>>> 9de89d77d0dee916cad753c422e6bc7671b12b00
   return (
     <div>
       <ul>

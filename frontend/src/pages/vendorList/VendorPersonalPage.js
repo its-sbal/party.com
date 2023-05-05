@@ -83,34 +83,26 @@ function VendorPersonalPage() {
                 </div>
               </Row>
               <Row>
-                <Col>
-                  <div
-                    className=".vendorTitle"
-                    style={{ fontFamily: " ", fontSize: "17px" }}
-                  >
-                    Weekday Hours :
-                    <strong
-                      style={{ fontFamily: "Tilt Warp", fontSize: "17px" }}
-                    >
-                      9 AM to 11 PM
-                    </strong>
-                  </div>
-                </Col>
+                <div
+                  className=".vendorTitle"
+                  style={{ fontFamily: " ", fontSize: "17px" }}
+                >
+                  Weekday Hours :
+                  <strong style={{ fontFamily: "Tilt Warp", fontSize: "17px" }}>
+                    9 AM to 11 PM
+                  </strong>
+                </div>
               </Row>
               <Row>
-                <Col>
-                  <div
-                    className=".vendorTitle"
-                    style={{ fontFamily: " ", fontSize: "17px" }}
-                  >
-                    Sunday Hours :{" "}
-                    <strong
-                      style={{ fontFamily: "Tilt Warp", fontSize: "17px" }}
-                    >
-                      3 PM to 8 PM
-                    </strong>
-                  </div>
-                </Col>
+                <div
+                  className=".vendorTitle"
+                  style={{ fontFamily: " ", fontSize: "17px" }}
+                >
+                  Sunday Hours :{" "}
+                  <strong style={{ fontFamily: "Tilt Warp", fontSize: "17px" }}>
+                    3 PM to 8 PM
+                  </strong>
+                </div>
               </Row>
             </Col>
           </Row>
