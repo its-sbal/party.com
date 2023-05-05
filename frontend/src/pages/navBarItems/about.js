@@ -2,7 +2,8 @@ import React from "react";
 import img1 from "./photo default.jpg";
 import "./about.css";
 import img2 from "./happu.png";
-
+import img10 from "./about.jpg";
+import img20 from "./about2.jpg";
 function About() {
   return (
     <div>
@@ -27,14 +28,13 @@ function About() {
         <div className="col-sm">
           <div className="card">
             <img
-              src={img1}
+              src={img20}
               alt="Jane"
               style={{ height: "14rem", width: "100%" }}
             />
             <div className="container">
-              <h2 style={{ marginTop: "0.3rem" }}>Sudhansu</h2>
+              <h1 style={{ marginTop: "0.3rem" }}>Sudhansu</h1>
               <p></p>
-              <p>sitsekhar@example.com</p>
               <p className="odi1">
                 <button
                   onClick={() =>
@@ -50,15 +50,20 @@ function About() {
         <div className="col-sm">
           <div className="card">
             <img
-              src={img1}
+              src={img10}
               alt="sudhansu"
               style={{ height: "14rem", width: "100%" }}
             />
             <div className="container">
-              <h2 style={{ marginTop: "0.3rem" }}>Soubhagya</h2>
-              <p>mike@example.com</p>
+              <h1 style={{ marginTop: "0.3rem" }}>Soubhagya</h1>
               <p className="odi1">
-                <button className="button">Contact</button>
+                <button
+                  onClick={() =>
+                    (window.location = "mailto:saubhagyabal2001.com")
+                  }
+                >
+                  Contact Me
+                </button>
               </p>
             </div>
           </div>
@@ -67,15 +72,20 @@ function About() {
         <div className="col-sm">
           <div className="card">
             <img
-              src={img1}
+              src={img10}
               alt="John"
               style={{ height: "14rem", width: "100%" }}
             />
             <div className="container">
-              <h2 style={{ marginTop: "0.3rem" }}>Priyadarshi</h2>
-              <p>john@example.com</p>
+              <h1 style={{ marginTop: "0.3rem" }}>Priyadarshi</h1>
               <p className="odi1">
-                <button className="button">Contact</button>
+                <button
+                  onClick={() =>
+                    (window.location = "mailto:p.satyaprakash99@gmail.com")
+                  }
+                >
+                  Contact Me
+                </button>
               </p>
             </div>
           </div>
@@ -84,15 +94,21 @@ function About() {
         <div className="col-sm">
           <div className="card">
             <img
-              src={img1}
+              src={img20}
               alt="Mike"
               style={{ height: "14rem", width: "100%" }}
             />
             <div className="container">
-              <h2 style={{ marginTop: "0.3rem" }}>Ayush Kumar</h2>
-              <p>mike@example.com</p>
+              <h1 style={{ marginTop: "0.3rem" }}>Ayush Kumar</h1>
+
               <p className="odi1">
-                <button className="button">Contact</button>
+                <button
+                  onClick={() =>
+                    (window.location = "mailto:cse.190310026@silicon.ac.in")
+                  }
+                >
+                  Contact Me
+                </button>
               </p>
             </div>
           </div>
