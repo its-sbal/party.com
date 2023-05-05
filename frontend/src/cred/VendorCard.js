@@ -15,27 +15,30 @@ function VendorCard({ product }) {
   };
 
   return (
-    <Link
-      to={{
-        pathname: `/vendor/${product._id}`,
-        state: { product },
-      }}
-    >
+    <>
       <div className="col">
         <Card>
-          <Card.Img variant="top" src={img1} />
-          <Card.Body>
-            <Card.Title>{product.vendorName}</Card.Title>
-            <Card.Text>{product.price}</Card.Text>
-            <Button variant="primary" onClick={handleAddToCart}>
-              Add to cart
-            </Button>
-          </Card.Body>
+          <Link
+            to={{
+              pathname: `/vendor/${product._id}`,
+              state: { product },
+            }}
+          >
+            <Card.Img variant="top" src={img1} />
+            <Card.Body>
+              <Card.Title>{product.vendorName}</Card.Title>
+              <Card.Text>{product.price}</Card.Text>
+            </Card.Body>
+          </Link>
+          <Button variant="primary" onClick={handleAddToCart}>
+            Add to cart
+          </Button>
         </Card>
       </div>
-    </Link>
+    </>
   );
 }
+
 export default VendorCard;
 
 ////oldcode DONT DELETE-------------------------------------------------------------
