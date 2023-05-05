@@ -32,7 +32,7 @@ function About() {
               <p></p>
               <p>sitsekhar@example.com</p>
               <p className="odi1">
-                <button className="button">Contact</button>
+                <button
               </p>
             </div>
           </div>
