@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@cred/neopop-web": "^1.0.0",
+    "@emailjs/browser": "^3.11.0",
     "@fortawesome/fontawesome-free": "^6.3.0",
     "@headlessui/react": "^1.7.12",
     "@heroicons/react": "^2.0.16",
@@ -35,7 +36,7 @@
     "sass": "^1.62.1",
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.4",
-    "styled-components": "^5.3.8",
+    "styled-components": "^5.3.10",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

@@ -33,6 +33,12 @@ function About() {
               <p>sitsekhar@example.com</p>
               <p className="odi1">
                 <button
+                  onClick={() =>
+                    (window.location = "mailto:sitsekhar@gmail.com")
+                  }
+                >
+                  Contact Me
+                </button>
               </p>
             </div>
           </div>
