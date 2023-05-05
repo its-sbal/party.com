@@ -10,7 +10,6 @@
   width: 100vw;
   display: flex;
   justify-content: center;
-  background-image: url("back4.png");
   background-size: cover;
   background-position: center;
 }
