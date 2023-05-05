@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Card, Col, Button } from "react-bootstrap";
+import { Card, Col } from "react-bootstrap";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Button, message } from "antd";
 
 import img1 from "./hi1.jpg";
 
@@ -14,9 +15,33 @@ function VendorCard({ product }) {
     dispatch(addItem(product));
   };
 
+  //for button animation starts here--------------
+  const [messageApi, contextHolder] = message.useMessage();
+  const key = "updatable";
+
+  const openMessage = () => {
+    messageApi.open({
+      key,
+      type: "loading",
+      content: "Adding to Cart...",
+    });
+    setTimeout(() => {
+      messageApi.open({
+        key,
+        type: "success",
+        content: "Success : Added to Cart",
+        duration: 2,
+      });
+    }, 1000);
+  };
+  //--------------for button animation ends here
+  const buttonClicked = () => {
+    handleAddToCart();
+    openMessage();
+  };
   return (
     <>
-      <div className="col">
+      <div className="Col">
         <Card>
           <Link
             to={{
@@ -30,8 +55,13 @@ function VendorCard({ product }) {
               <Card.Text>{product.price}</Card.Text>
             </Card.Body>
           </Link>
-          <Button variant="primary" onClick={handleAddToCart}>
-            Add to cart
+          {contextHolder}
+          <Button
+            type="primary"
+            style={{ backgroundColor: "blueviolet", height: "3rem" }}
+            onClick={buttonClicked}
+          >
+            Add to Cart
           </Button>
         </Card>
       </div>

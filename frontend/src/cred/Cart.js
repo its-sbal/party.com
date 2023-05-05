@@ -4,6 +4,10 @@ import { useSelector } from "react-redux";
 function Cart() {
   const cartItems = useSelector((state) => state.cart.items); // get the items from the cart slice of state
   console.log(cartItems);
+  let totalPrice = 0;
+  cartItems.forEach((item) => {
+    totalPrice += parseInt(item.price);
+  });
   return (
     <div>
       <h2>Cart</h2>
@@ -14,6 +18,7 @@ function Cart() {
           </li>
         ))}
       </ul>
+      <h1>Total Price : {totalPrice}</h1>
     </div>
   );
 }
