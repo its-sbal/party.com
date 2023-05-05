@@ -8,13 +8,11 @@ function Cart() {
 
   const cartItems = useSelector((state) => state.cart.items); // get the items from the cart slice of state
   console.log(cartItems);
-  let totalPrice = 0;
+  let TotalPrice = 0;
   cartItems.forEach((item) => {
-    totalPrice += parseInt(item.price);
+    TotalPrice += parseInt(item.price);
   });
 
-<<<<<<< HEAD
-=======
   //adding id of vendor to array===========
   // Extract the values from cartItems and store them in an array
   // const myArrayFieldValues = cartItems.map((item) => item._id);
@@ -32,7 +30,6 @@ function Cart() {
   //     console.log(response.data);
   //   });
 
->>>>>>> 9de89d77d0dee916cad753c422e6bc7671b12b00
   return (
     <div>
       <ul>
@@ -42,11 +39,11 @@ function Cart() {
           </li>
         ))}
       </ul>
-      <h1>Total Price : {totalPrice}</h1>
+      <h1>Total Price : {TotalPrice}</h1>
 
       <Button onClick={() => setShow(true)}>Check Out</Button>
 
-      {show && <FormValidation totalPrice={totalPrice} />}
+      {show && <FormValidation TotalPrice={TotalPrice} cartItems={cartItems} />}
     </div>
   );
 }

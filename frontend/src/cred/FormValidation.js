@@ -2,15 +2,17 @@ import React from "react";
 import { Form, Button } from "semantic-ui-react";
 import { useForm } from "react-hook-form";
 
-export default function FormValidation({ totalPrice }) {
+export default function FormValidation({ TotalPrice, cartItems }) {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
-    fetch("http://127.0.0.1:8000/serviceUpdate/", {
+    const myArrayFieldValues = cartItems.map((item) => item._id);
+    data.my_array_field = myArrayFieldValues;
+    console.log(cartItems);
+    fetch("http://127.0.0.1:8000/cartUpdate/", {
       method: "POST",
       headers: {
         Accept: "application/json, text/plain, */*",
@@ -34,18 +36,18 @@ export default function FormValidation({ totalPrice }) {
           <label>First Name</label>
           <input
             type="text"
-            {...register("FName", { required: true, maxLength: 100 })}
+            {...register("fName", { required: true, maxLength: 100 })}
           />
         </Form.Field>
-        {errors.FName && <p>Please check the FName</p>}
+        {errors.fName && <p>Please check the FName</p>}
         <Form.Field>
           <label>Last Name</label>
           <input
             type="text"
-            {...register("LName", { required: true, maxLength: 100 })}
+            {...register("lName", { required: true, maxLength: 100 })}
           />
         </Form.Field>
-        {errors.LName && <p>Please check the LName</p>}
+        {errors.lName && <p>Please check the LName</p>}
         <Form.Field>
           <label>Email</label>
           <input
@@ -63,30 +65,30 @@ export default function FormValidation({ totalPrice }) {
           <label>Address</label>
           <input
             type="text"
-            {...register("Address", { required: true, maxLength: 100 })}
+            {...register("address", { required: true, maxLength: 100 })}
           />
         </Form.Field>
-        {errors.Address && <p>Please check the Address</p>}
+        {errors.address && <p>Please check the Address</p>}
 
         <Form.Field>
           <label>Mobile Number</label>
           <input
             placeholder="0123456789"
             type="text"
-            {...register("phNumber", { required: true, maxLength: 10 })}
+            {...register("mobile", { required: true, maxLength: 10 })}
           />
         </Form.Field>
-        {errors.phNumber && <p>Please check the Phone Number</p>}
+        {errors.mobile && <p>Please check the Phone Number</p>}
         <Form.Field>
           <label>Total Price</label>
           <input
             placeholder="Total Price"
             type="text"
-            value={totalPrice}
-            {...register("Total Price", { required: true })}
+            value={TotalPrice}
+            {...register("totalPrice", { required: true })}
           />
         </Form.Field>
-        {errors.TotalPrice && <p>Please check the Phone Number</p>}
+        {errors.totalPrice && <p>Please check the Phone Number</p>}
         <div className="cric2">
           <Button type="submit">Place Order</Button>
         </div>

@@ -7,12 +7,13 @@ class user(models.Model):
     fName = models.CharField(max_length=100,null=True,blank=True)
     lName = models.CharField(max_length=100,null=True,blank=True)
     email = models.CharField(max_length=100,null=True,blank=True)
-    password = models.CharField(max_length=100,null=True,blank=True)
     address = models.TextField(max_length=100,null=True,blank=True)
     mobile = models.IntegerField(null=True,blank=True)
+    totalPrice = models.DecimalField(null=True,max_digits=5, decimal_places=2)
+    my_array_field = models.JSONField(default=list)
 
     def __str__(self):
-        return self.fname
+        return self.fName
     
 class vendor(models.Model):
     _id = models.AutoField(primary_key=True)
@@ -31,6 +32,3 @@ class vendor(models.Model):
     def __str__(self):
         return self.vendorName
 
-class orders(models.Model):
-    userNameid = models.AutoField(primary_key=True)
-    bookDate = models.DateField(auto_now_add=False)

@@ -17,7 +17,7 @@ function VendorPersonalPage() {
     }
     fetchVendorDetails();
   }, [vendorId]);
-
+  console.log(product);
   return (
     <div style={{ paddingLeft: "2rem" }}>
       {product ? (

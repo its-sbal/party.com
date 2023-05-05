@@ -21,7 +21,7 @@ import VendorPersonalPage from "./pages/vendorList/VendorPersonalPage";
 import ConcertCard from "./cred/ConcertCard";
 // import Concert from "./cred/concertTicket";
 import Cart from "./cred/Cart";
-
+import BookedCart from "./cred/bookedCart";
 const store = createStore(rootReducer);
 
 function App() {
@@ -45,8 +45,9 @@ function App() {
           {/* <Route path="/concert" element={<Concert />} /> */}
           <Route path="/vendor" element={<VendorPage />} />
           <Route path="/t" element={<Ticket />} />
-          <Route path="/vendor/:vendorId" element={<VendorPersonalPage />} />
           <Route path="/c" element={<ConcertCard />} />
+          <Route path="/vendor/:vendorId" element={<VendorPersonalPage />} />
+          <Route path="/user/:userId" element={<BookedCart />} />
         </Routes>
       </Router>
       <Footer />
