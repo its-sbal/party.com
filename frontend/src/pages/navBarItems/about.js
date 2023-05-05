@@ -26,9 +26,13 @@ function About() {
       <div className="row">
         <div className="col-sm">
           <div className="card">
-            <img src={img2} alt="Jane" style={{ width: "80%" }} />
+            <img
+              src={img1}
+              alt="Jane"
+              style={{ height: "14rem", width: "100%" }}
+            />
             <div className="container">
-              <h2>Sudhansu</h2>
+              <h2 style={{ marginTop: "0.3rem" }}>Sudhansu</h2>
               <p></p>
               <p>sitsekhar@example.com</p>
               <p className="odi1">
@@ -39,10 +43,13 @@ function About() {
         </div>
         <div className="col-sm">
           <div className="card">
-            <img src={img1} alt="sudhansu" style={{ width: "100%" }} />
+            <img
+              src={img1}
+              alt="sudhansu"
+              style={{ height: "14rem", width: "100%" }}
+            />
             <div className="container">
-              <h2>Soubhagya</h2>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <h2 style={{ marginTop: "0.3rem" }}>Soubhagya</h2>
               <p>mike@example.com</p>
               <p className="odi1">
                 <button className="button">Contact</button>
@@ -53,10 +60,13 @@ function About() {
 
         <div className="col-sm">
           <div className="card">
-            <img src={img1} alt="John" style={{ width: "100%" }} />
+            <img
+              src={img1}
+              alt="John"
+              style={{ height: "14rem", width: "100%" }}
+            />
             <div className="container">
-              <h2>Priyadarshi</h2>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <h2 style={{ marginTop: "0.3rem" }}>Priyadarshi</h2>
               <p>john@example.com</p>
               <p className="odi1">
                 <button className="button">Contact</button>
@@ -67,10 +77,13 @@ function About() {
 
         <div className="col-sm">
           <div className="card">
-            <img src={img1} alt="Mike" style={{ width: "100%" }} />
+            <img
+              src={img1}
+              alt="Mike"
+              style={{ height: "14rem", width: "100%" }}
+            />
             <div className="container">
-              <h2>Ayush Kumar</h2>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <h2 style={{ marginTop: "0.3rem" }}>Ayush Kumar</h2>
               <p>mike@example.com</p>
               <p className="odi1">
                 <button className="button">Contact</button>

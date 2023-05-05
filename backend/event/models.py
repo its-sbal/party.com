@@ -32,9 +32,5 @@ class vendor(models.Model):
         return self.vendorName
 
 class orders(models.Model):
-    _id = models.AutoField(primary_key=True)
-    quantity = models.IntegerField(null=True,blank=True)
-    bookFrom = models.DateField(auto_now_add=False)
-    bookUpto = models.DateField(auto_now_add=False)
-    isPaid = models.BooleanField(default=False)
-    totalPrice = models.IntegerField(null=True,blank=True)
+    userNameid = models.AutoField(primary_key=True)
+    bookDate = models.DateField(auto_now_add=False)

@@ -4,7 +4,16 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import img1 from "./hi1.jpg";
 
+import { useDispatch } from "react-redux";
+import { addItem } from "./cartSlice"; // import the action creator
+
 function VendorCard({ product }) {
+  const dispatch = useDispatch();
+
+  const handleAddToCart = () => {
+    dispatch(addItem(product));
+  };
+
   return (
     <Link
       to={{
@@ -18,7 +27,9 @@ function VendorCard({ product }) {
           <Card.Body>
             <Card.Title>{product.vendorName}</Card.Title>
             <Card.Text>{product.price}</Card.Text>
-            {/* <Button variant="primary">Add to cart</Button> */}
+            <Button variant="primary" onClick={handleAddToCart}>
+              Add to cart
+            </Button>
           </Card.Body>
         </Card>
       </div>
@@ -26,3 +37,27 @@ function VendorCard({ product }) {
   );
 }
 export default VendorCard;
+
+////oldcode DONT DELETE-------------------------------------------------------------
+// function VendorCard({ product }) {
+//   return (
+//     <Link
+//       to={{
+//         pathname: `/vendor/${product._id}`,
+//         state: { product },
+//       }}
+//     >
+//       <div className="col">
+//         <Card>
+//           <Card.Img variant="top" src={img1} />
+//           <Card.Body>
+//             <Card.Title>{product.vendorName}</Card.Title>
+//             <Card.Text>{product.price}</Card.Text>
+//             <Button variant="primary">Add to cart</Button>
+//           </Card.Body>
+//         </Card>
+//       </div>
+//     </Link>
+//   );
+// }
+// export default VendorCard;
